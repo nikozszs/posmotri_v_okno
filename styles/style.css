@@ -36,3 +36,47 @@ ul,
 ol {
   list-style: none;
 }
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin: 133px 30px 133px 30px;
+}
+
+.result {
+}
+
+.result__video {
+  padding: 78px 0px 0px 0px;
+  width: 100%;
+}
+
+.result__video-container {
+  padding-bottom: 16px;
+}
+
+.search-form {
+  display: flex;
+  justify-content: space-between;
+  margin-right: auto;
+  gap: 40px;
+}
+
+.title {
+  padding-bottom: 26px;
+}
+
+.content__details {
+  display: flex;
+  flex-direction: column;
+  padding-inline-start: 30px;
+  height: 100%;
+}
+
+.content__list {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  height: 347px;
+}
