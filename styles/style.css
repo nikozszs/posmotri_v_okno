@@ -47,13 +47,29 @@ ol {
 .result {
 }
 
-.result__video {
-  padding: 78px 0px 0px 0px;
-  width: 100%;
+.preloader {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #545050;
 }
 
 .result__video-container {
+  max-width: 711px;
+  width: 100%;
+  max-height: 386px;
+  height: 100%;
   padding-bottom: 16px;
+  padding-top: 78px;
+  position: relative;
+}
+
+.result__video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .search-form {
@@ -63,20 +79,114 @@ ol {
   gap: 40px;
 }
 
+.search-form__fieldset-title {
+  font-family: 'Fira Sans Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  padding-bottom: 5px;
+}
+
 .title {
   padding-bottom: 26px;
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 94%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.content__accent {
+  opacity: 0.2;
 }
 
 .content__details {
   display: flex;
   flex-direction: column;
   padding-inline-start: 30px;
+  max-height: 440px;
   height: 100%;
+  max-width: 339px;
+  width: 100%;
+}
+
+.preloader {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #545050;
 }
 
 .content__list {
   display: flex;
   flex-direction: column;
+  position: relative;
   overflow-y: auto;
   height: 347px;
+}
+
+.content__list-item {
+  display: flex;
+  padding-bottom: 30px;
+}
+
+.content__list-item:not(:last-child) {
+}
+
+.content__video-card {
+  display: flex;
+  justify-content: start;
+}
+
+.content__video-card-title {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding-bottom: 6px;
+}
+
+.content__video-card-thumbnail {
+  width: 194px;
+  max-width: 100%;
+  height: 103px;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.content__video-card-description-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  width: 200px;
+  font-family: 'Fira Sans Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+
+.content__card-link {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
 }
