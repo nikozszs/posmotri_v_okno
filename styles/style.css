@@ -190,3 +190,44 @@ ol {
   clip-path: inset(50%);
   white-space: nowrap;
 }
+
+.search-form__fieldset {
+  border: none;
+  cursor: pointer;
+}
+
+.search-form__textfield {
+  cursor: pointer;
+  font-family: "Fira Sans Condensed";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+  text-align: left;  
+  appearance: none;
+}
+
+.search-form__label {
+  display: inline-flex;
+  gap: 15px;
+  width: fit-content;
+  cursor: pointer;
+  font-family: 'Fira Sans Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+.search-form__fieldset-title {
+  font-family: 'Fira Sans Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+.search-form__checkbox-list {
+  display: inline-flex;
+}
