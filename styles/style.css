@@ -41,10 +41,14 @@ ol {
   display: flex;
   justify-content: center;
   flex-wrap: nowrap;
-  margin: 160px 0px 30px 0px;
+  margin: 133px 0px 133px 0px;
 }
 
 .result {
+  max-width: 711px;
+  width: 100%;
+  max-height: 456px;
+  height: 100%;
 }
 
 .preloader {
@@ -57,11 +61,7 @@ ol {
 }
 
 .result__video-container {
-  max-width: 711px;
-  width: 100%;
-  max-height: 386px;
-  height: 100%;
-  padding-bottom: 16px;
+  padding-bottom: 14px;
   padding-top: 78px;
   position: relative;
 }
@@ -108,9 +108,9 @@ ol {
   display: flex;
   flex-direction: column;
   padding-inline-start: 30px;
-  max-height: 440px;
+  max-height: 534px;
   height: 100%;
-  max-width: 339px;
+  max-width: 399px;
   width: 100%;
 }
 
@@ -128,7 +128,10 @@ ol {
   flex-direction: column;
   position: relative;
   overflow-y: auto;
-  height: 347px;
+  max-height: 298px;
+  height: 100%;
+  max-width: 399px;
+  width: 100%;
 }
 
 .content__list-item {
@@ -194,16 +197,18 @@ ol {
 .search-form__fieldset {
   border: none;
   cursor: pointer;
+  appearance: none;
 }
 
 .search-form__textfield {
-  cursor: pointer;
   font-family: "Fira Sans Condensed";
   font-size: 18px;
   font-weight: 400;
   line-height: 21.6px;
   text-align: left;  
   appearance: none;
+  background-color: #1b1919;
+  color: #FFFFFF;
 }
 
 .search-form__label {
@@ -219,6 +224,10 @@ ol {
   color: #FFFFFF;
 }
 
+.search-form__label-text {
+  padding-right: 5px;
+}
+
 .search-form__fieldset-title {
   font-family: 'Fira Sans Condensed';
   font-style: normal;
@@ -230,4 +239,35 @@ ol {
 
 .search-form__checkbox-list {
   display: inline-flex;
+}
+
+.search-form__pseudo-checkbox {
+  display: inline-flex;
+  justify-content: center;
+  width: 19px;
+  background-color: #1b1919;
+  border: 1px solid white;
+}
+
+.button {
+  height: 100%;
+  max-height: 34px;
+  font-family: 'Fira Sans Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  cursor: pointer;
+  border: 1px solid #FFFFFF;
+  background-color: #1b1919;
+}
+.search-form__submit-button {
+  max-width: 194px;
+  width: 100%;
+}
+
+.more-button {
+  max-width: 399px;
+  width: 100%;
 }
