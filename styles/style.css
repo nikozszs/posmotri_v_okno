@@ -45,9 +45,10 @@ ol {
 }
 
 .result {
+  margin-top: 80px;
   max-width: 711px;
   width: 100%;
-  max-height: 456px;
+  max-height: 459px;
   height: 100%;
 }
 
@@ -61,8 +62,7 @@ ol {
 }
 
 .result__video-container {
-  padding-bottom: 18px;
-  padding-top: 78px;
+  padding-bottom: 14px;
   position: relative;
 }
 
