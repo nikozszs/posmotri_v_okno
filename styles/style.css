@@ -41,24 +41,15 @@ ol {
   display: flex;
   justify-content: center;
   flex-wrap: nowrap;
-  margin: 333px 0px 0px 0px;
+  margin: 130px 0px 133px 0px;
+  width: 1140px;
 }
 
 .result {
   margin-top: 80px;
-  max-width: 711px;
+  max-width: 700px;
   width: 100%;
-  max-height: 459px;
   height: 100%;
-}
-
-.preloader {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #545050;
 }
 
 .result__video-container {
@@ -82,7 +73,7 @@ ol {
 }
 
 .search-form__fieldset-title {
-  font-family: 'Fira Sans Condensed';
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -92,7 +83,7 @@ ol {
 
 .title {
   padding-bottom: 24px;
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 75px;
@@ -115,15 +106,6 @@ ol {
   width: 100%;
 }
 
-.preloader {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #545050;
-}
-
 .content__list {
   display: flex;
   flex-direction: column;
@@ -143,16 +125,13 @@ ol {
   line-height: 30px;
 }
 
-.content__list-item:not(:last-child) {
-}
-
 .content__video-card {
   display: flex;
   justify-content: flex-end;
 }
 
 .content__video-card-title {
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -175,7 +154,7 @@ ol {
   flex: 1;
   flex-direction: column;
   width: 200px;
-  font-family: 'Fira Sans Condensed';
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -216,14 +195,14 @@ ol {
 .search-form__textfield {
   width: 225px;
   max-width: 100%;
-  font-family: "Fira Sans Condensed";
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 21.2px;
   text-align: left;
   padding-left: 0px;  
   appearance: none;
-  background-color: #1b1919;
+  background-color: transparent;
   color: #FFFFFF;
   border: 1px solid #fff;
   border-right: 0px;
@@ -234,7 +213,7 @@ ol {
   display: inline-flex;
   width: fit-content;
   cursor: pointer;
-  font-family: 'Fira Sans Condensed';
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -254,7 +233,7 @@ ol {
   max-width: 100%;
   height: 22px;
   max-height: 100%;
-  font-family: 'Fira Sans Condensed';
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -281,7 +260,7 @@ ol {
 .button {
   height: 100%;
   max-height: 34px;
-  font-family: 'Fira Sans Condensed';
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -289,7 +268,7 @@ ol {
   color: #FFFFFF;
   cursor: pointer;
   border: 1px solid #FFFFFF;
-  background-color: #1b1919;
+  background-color: transparent;
 }
 .search-form__submit-button {
   padding-top: 2px;
@@ -351,12 +330,4 @@ ol {
   background-position: center;
   background-color: #fff;
   width: 19px;
-}
-
-.error_title {
-  font-family: Oswald, sans-serif;
-  font-size: 30px;
-  line-height: 33px;
-  text-align: center;
-  text-transform: uppercase;
 }
