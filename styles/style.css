@@ -308,14 +308,16 @@ ol {
 }
 
 .search-form__label:has(:focus-visible) {
-  outline: none;
+  outline: 1px solid #fff;
+  outline-offset: 2px;
+  border: none;
 }
 
 .search-form__pseudo-checkbox:focus {
   outline: 1px;
 }
 
-.search-form__label:hover {
+.search-form__label:hover .search-form__label-text {
   text-decoration: underline;
 }
 
@@ -343,10 +345,18 @@ ol {
   outline: 1px solid #fff;
 }
 
-.search-form__pseudo-checkbox[type='checkbox']:checked + span {
+.search-form__checkbox:checked + .search-form__pseudo-checkbox {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   background-color: #fff;
-  width: 15px;
+  width: 19px;
+}
+
+.error_title {
+  font-family: Oswald, sans-serif;
+  font-size: 30px;
+  line-height: 33px;
+  text-align: center;
+  text-transform: uppercase;
 }
