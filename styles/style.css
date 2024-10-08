@@ -172,10 +172,11 @@ ol {
 }
 
 .content__card-link {
+  display: block;
   outline: none;
   text-decoration: none;
   color: #FFFFFF;
-  margin: 1px;
+  margin: 2px;
 }
 
 .visually-hidden {
@@ -250,18 +251,21 @@ ol {
 
 .search-form__checkbox-list {
   display: inline-flex;
-  width: 214px;
+  position: relative;
+  width: 211px;
   max-width: 100%;
   height: 19px;
   max-height: 100%;
 }
 
 .search-form__pseudo-checkbox {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
+  align-self: center;
   width: 19px;
-  background-color: #1b1919;
-  border: 1px solid white;
+  height: 19px;
+  background-color: transparent;
+  border: 1px solid #fff;
 }
 
 .button {
@@ -315,6 +319,10 @@ ol {
   outline: none;
 }
 
+.search-form__textfield:focus {
+  outline: none;
+}
+
 .search-form__label:hover .search-form__label-text {
   text-decoration: underline;
 }
@@ -325,10 +333,6 @@ ol {
 
 .content__list-item:hover {
   text-decoration: underline;
-}
-
-.search-form__submit-button:active {
-  background-color: #545050;
 }
 
 .button:active {
@@ -345,12 +349,21 @@ ol {
 
 .button:focus-visible {
   outline: 1px solid #fff;
+  outline-offset: 2px;
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox {
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
   background-color: #fff;
-  width: 19px;
+}
+
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  background-position: center;
+  margin: auto;
+  border: 1px solid #1b1919;
 }
