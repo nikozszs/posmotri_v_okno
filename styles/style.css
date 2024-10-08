@@ -51,7 +51,6 @@ ol {
 }
 
 .result__video-container {
-  padding-bottom: 19px;
   position: relative;
 }
 
@@ -68,6 +67,7 @@ ol {
   justify-content: space-between;
   margin-right: auto;
   gap: 40px;
+  padding-top: 17px;
 }
 
 .search-form__fieldset-title {
