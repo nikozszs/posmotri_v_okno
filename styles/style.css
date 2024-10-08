@@ -12,6 +12,8 @@ html {
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
+  max-height: 550px;
+  height: 100%;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
